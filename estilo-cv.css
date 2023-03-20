@@ -1,0 +1,296 @@
+
+body {
+    background-color: rgb(220, 235, 240);
+  }
+
+ .container {
+    width: 60%;
+    margin: 0 auto;
+    min-width: 999px;
+    background-color: beige;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: 2px 2px 7px rgb(187, 198, 214);
+    border-radius: 10px;
+ } 
+
+   h1 {
+    font-family: 'crimson pro';
+    font-size: 60px;
+    color: rgb(18, 60, 109);
+    text-align: center;
+  }
+  
+  h2 {
+    font-family:'Signika Negative', sans-serif;
+    font-size: 30px;
+    color:midnightblue;
+    text-align: center;
+  }
+
+  p {
+  font-family:'Signika Negative', sans-serif;
+  font-size: 25px;
+  font-weight:bolder;
+  color:midnightblue;
+  text-align:left;
+  }
+
+  p1{
+    font-family:'Signika Negative', sans-serif;
+    font-size: 25px;
+    font-weight:bolder;
+    color:midnightblue;
+    text-align:center;
+  }
+
+
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px
+    }
+
+
+  .datos{background-color:lightblue; border: 3px solid; border-color: beige; padding: 30px;}
+
+   
+  ul1 {
+    font-family:'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    color:midnightblue;
+    align-content: initial;
+    margin-left:initial
+    margin-right: 30px;
+  }
+
+  ul2 {
+    font-family:'Signika Negative', sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    color:midnightblue;
+    align-content: initial;
+    margin-left:120 px;
+    margin-right: 30px;
+  }
+
+  /* clase contenedora de las imgenes de redes*/
+.imgRedes {
+   height: 60px;
+}
+.imgRedes:hover {
+  transform: scale(1.25);
+  transition: 0.5s ease 0.05s;
+}
+  
+  /*Contenedor de la foto de perfil (figure e img)*/
+#perfil{
+    float:none;
+    margin-left: 35%;
+    min-width: 200px;
+    max-width: 240px;
+    width: 40%;
+    height: 100%;
+    
+}
+
+/* figure contenedor de img*/
+#foto{
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 128px;
+    min-height: 128px;
+    width: 99%;
+    height: 99%;
+    
+}
+
+/* img contenedor de la imagen de perfil */
+#fotoPerfil{
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    border: solid beige;
+}
+
+
+.container2{
+  padding: 20px;
+  align-content: flex-start;
+}
+
+.hardskills{
+  column-count: 3;
+  column-gap: 2px;
+  padding-inline-start: 0;
+  border-bottom: 3px dotted; color: cornflowerblue;
+ }
+
+ /** apariencia de los cículos de progreso*/
+ .circular-progress-1,.circular-progress-2,.circular-progress-3{
+  width: 160px;
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
+  
+}
+
+.outer-1,.outer-2,.outer-3{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding-bottom: 20px;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+.inner-1,.inner-2,.inner-3{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding-bottom: 20px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+              -0,5px -0,5px 0px rgba(255,255,255,1),
+              0,5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.2)
+}
+
+#number-3,#number-2,#number-1{
+  font-family: 'crimson pro';
+  font-weight: 400;
+  font-size: 18px;
+  color:darkblue;
+  text-align: center;
+}
+
+#circle-1{
+  fill: none;
+  stroke: url(#GradientColor-1);
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+   
+
+  animation: anim1 2s linear forwards;
+}
+
+#circle-2{
+  fill: none;
+  stroke: url(#GradientColor-2);
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim2 2s linear forwards; 
+}
+
+#circle-3{
+  fill: none;
+  stroke: url(#GradientColor-3);
+  stroke-width: 10px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: anim3 2s linear forwards;
+}
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/** animacion del circulo de progreso*/
+@keyframes anim1{
+  100%{
+      stroke-dashoffset: 70;
+  }
+}
+
+@keyframes anim2{
+  100%{
+      stroke-dashoffset: 141;
+  }
+}
+
+@keyframes anim3{
+  100%{
+      stroke-dashoffset: 212;
+  }
+}
+
+ 
+.softskills{
+  column-gap: 2px;
+  padding: 20px;
+  border-bottom: 3px dotted; color: cornflowerblue;
+}
+
+.educacion{
+  column-gap: 2px;
+  padding: 20px;
+  border-bottom: 3px dotted; color: cornflowerblue;
+}
+
+.experiencia{
+  column-gap: 2px;
+  padding: 20px;
+  border-bottom: 3px dotted; color: cornflowerblue;
+}
+
+
+footer{
+  width: 60%;
+    margin: 0 auto;
+    min-width: 999px;
+    background-color: beige;
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: 2px 2px 7px rgb(187, 198, 214);
+    border-radius: 10px;
+}
+footer a:hover{
+  color: rgb(98, 151, 230);
+  font-weight: bold;
+}
+
+
+/** apariencia y animacion del btnToTop*/
+#btnToTop{
+  display:none;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+
+  padding: 25px 10px;
+  background-color:darkblue;
+  color: beige;
+  border-radius: 30%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 5rem;
+  text-align: center;
+  vertical-align:text-bottom;
+  cursor: pointer;
+}
+
+#btnToTop:hover{
+  transform: scale(1.25);
+  transition: 0.5s ease 0.05s;
+}
